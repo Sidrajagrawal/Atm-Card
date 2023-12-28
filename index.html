@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <title>ATM CARD</title>
+    <link rel="stylesheet" href="atm.css">
+</head>
+<body>
+    <div class="main">
+        <div class="data">
+            <label for="crdno"> Card Number</label><br>
+            <input type="text" id="crdno" maxlength="19" oninput="cdis()" value=""><br><br>
+
+            <label for="fname">Account Holder Name</label><br>
+            <input type="text" id="fname"  oninput="ndis()"><br><br>
+
+            <label for="cvv"> CVV</label><br>
+            <input type="text" id="cvv" maxlength="3" oninput="cnn()"><br><br>
+
+            <label for="doe"> Date of Expire</label><br>
+            <input type="text" id="doe" placeholder="mm/yy" oninput="ddis()" maxlength="5"><br><br>
+            <button>Register</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            
+            <div class="front">
+                <h2>Platinum</h2>
+                <img src="Mastercard-Logo.wine.png" alt="mastercard" class="msc">
+                <img src="Goldchip.png" alt="Goldchip" class="gc">
+
+                <input type="text" id="cn" value="XXXX XXXX XXXX XXXX" readonly><br><br>
+                <input type="text" readonly value="dd/yy" id="de"><br><br>
+                <input type="text" readonly value="ffff" id="fn">
+            </div>
+            <div class="back">
+                <h4>Customer Service +123 45 67.890.12.34</h4>
+                <div class="black"></div>
+                <h5>Authorized Signature &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Not Valid Unless Signed</h5>
+                <div class="white"></div>
+                <div class="cvvno"><input type="text" value="XXX" id="cnn" ></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias id temporibus quos labore, ullam sapiente sunt nemo neque numquam possimus porro laboriosam nesciunt omnis amet commodi quae ducimus repellendus corporis!</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="atm.js"></script>
+</body>
+</html>
+
+<!-- D:\Html learning\CSS\atm -->
